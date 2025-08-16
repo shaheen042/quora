@@ -1,0 +1,73 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h3{
+    color: brown;
+}
+#login{
+    background-color: white;
+    color: palevioletred;
+}
+#signup{                          /* Id selector */
+    background-color: brown;
+    color: white;
+}
+.upvote{                         /*class selector */
+    background-color: green;
+    color: aliceblue;
+}
+/*..............descendant selector.................*/
+.post a{
+    background-color: yellow;
+    color: red;
+}
+nav ul li a{
+    color: purple;
+}
+nav ul li{
+    color: blue;
+}
+/*.......adjacent sibling combinator (h3 that comes immediately after any p......*/
+p + h3{
+    text-decoration: blue underline;
+}
+.upvote+ button{
+    background-color: cornflowerblue;
+    color: beige;
+}
+/*....child combinator (drawback ye h ki sirf ek hi level niche jaa pata h so most of the cases we use descendant selector......*/
+div> input{
+    background-color: antiquewhite;
+}
+/*..Attribute selector input[attr=value]..*/
+input[type=text]{
+    color: green;
+} 
+input[type=password]{
+    color: red;
+}
+/*..pseudo class (jab chahte h ki koi button pe hover ya click kare to color change ho) */
+button:hover{
+    background-color: black;
+    color: hotpink;
+}
+button:active{
+    background-color: blueviolet;
+    color: aquamarine;
+}
+input[type=radio]:checked + label {
+    color: red;
+}
+/*pseudo element*/
+h1::first-letter{
+    color: black;
+}
+p{
+    color: rgb(58, 125, 81)
+}
+p::first-line{
+    color: orangered
+}
+p::selection{      
+    color: blueviolet;
+}
